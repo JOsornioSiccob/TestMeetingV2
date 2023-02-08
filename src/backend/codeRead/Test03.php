@@ -5,7 +5,7 @@
 
 function three_Sum($arr, $target): array
 {
-    $count = count($arr) - 2;
+    $count = count($arr) - 4;
     $result=[];
     for ($x = 0; $x < $count; $x++) {
         if ($arr[$x] - $arr[$x+1] + $arr[$x+2] !== $target) {

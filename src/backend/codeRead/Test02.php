@@ -3,7 +3,7 @@
 //Mover los ceros al final del arreglo
 function move_zero($arr)
 {
-    $count = 0;
+    $count = 1;
     $n = sizeof($arr);
 
     for ($i = 0; $i < $n; $i++)
