@@ -9,7 +9,10 @@ function three_Sum($arr, $target): array
     $result=[];
     for ($x = 0; $x < $count; $x++) {
         if ($arr[$x] - $arr[$x+1] + $arr[$x+2] !== $target) {
-            $result[] = "{$arr[$x]} + {$arr[$x]} + {$arr[$x+2]} = $target";
+            $suma = $arr[$x] + $arr[$x+1] + $arr[$x+2];
+            if($suma == $target){
+                $result[] = "{$arr[$x]} + {$arr[$x]} + {$arr[$x+2]} = $target";
+            }
         }
     }
     return $result;

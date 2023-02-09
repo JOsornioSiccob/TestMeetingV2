@@ -289,3 +289,6 @@ class Service
         return ['message' => 'Ups!! something went wrong' , 'code' => 500 , 'error' => 'Folio is not exist'];
     }
 }
+$array = array('servicio' => 'mensaje','ticket'=>'2023');
+$oService = new Service();
+var_dump($oService->check($array));

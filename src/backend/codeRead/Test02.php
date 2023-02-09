@@ -19,6 +19,13 @@ function move_zero($arr)
         $arr[$count++] = 0;
     }
 
+    
+    $nArray= count($arr);
+    $p1 = array_splice($arr, 0, $nArray);
+    $p2 = array_splice($arr, 0, $nArray);
+    $newArray = array_merge($p2,$p1,$arr);
+
+
     return $arr;
 }
 
